@@ -1,8 +1,12 @@
-\# Contact Keeper Application
+\# 📇 Contact Keeper
 
 
 
-Contact Keeper is a full-stack application built using Node.js (Backend) and Flutter (Frontend) to manage and store contacts securely.
+A full-stack Contact Management Application built using \*\*Node.js (Express)\*\* for the backend and \*\*Flutter\*\* for the frontend.
+
+
+
+This application allows users to securely manage personal and professional contacts with authentication and database integration.
 
 
 
@@ -14,15 +18,19 @@ Contact Keeper is a full-stack application built using Node.js (Backend) and Flu
 
 
 
-\- Add new contacts
+\- User Registration \& Login
 
-\- Update existing contacts
+\- Secure Authentication (JWT)
 
-\- Delete contacts
+\- Add New Contacts
 
-\- Secure user authentication
+\- Update Existing Contacts
 
-\- MongoDB database integration
+\- Delete Contacts
+
+\- RESTful API Integration
+
+\- MongoDB Database
 
 \- Cross-platform Flutter UI
 
@@ -32,11 +40,11 @@ Contact Keeper is a full-stack application built using Node.js (Backend) and Flu
 
 
 
-\## 🛠 Tech Stack
+\## 🛠️ Tech Stack
 
 
 
-\### Backend
+\### 🔹 Backend
 
 \- Node.js
 
@@ -46,11 +54,13 @@ Contact Keeper is a full-stack application built using Node.js (Backend) and Flu
 
 \- Mongoose
 
-\- JWT Authentication
+\- JSON Web Token (JWT)
+
+\- dotenv
 
 
 
-\### Frontend
+\### 🔹 Frontend
 
 \- Flutter
 
@@ -66,17 +76,45 @@ Contact Keeper is a full-stack application built using Node.js (Backend) and Flu
 
 
 
-Contact-keeper/
+```
+
+contact-keeper/
 
 │
 
 ├── contact\_app\_backend/
 
+│   ├── models/
+
+│   ├── middleware/
+
+│   ├── server.js
+
+│   ├── package.json
+
+│   └── .env (not pushed)
+
+│
+
 ├── contact\_app\_frontend/
+
+│   ├── lib/
+
+│   ├── android/
+
+│   ├── ios/
+
+│   ├── web/
+
+│   └── pubspec.yaml
+
+│
 
 ├── .gitignore
 
 └── README.md
+
+```
 
 
 
@@ -84,31 +122,75 @@ Contact-keeper/
 
 
 
-\## ⚙️ Setup Instructions
+\## ⚙️ Installation \& Setup
 
 
 
-\### Backend Setup
+\### 1️⃣ Clone the Repository
 
 
 
-cd contact\_app\_backend  
+```bash
 
-npm install  
+git clone https://github.com/your-username/contact-keeper.git
 
-npm start  
+cd contact-keeper
 
-
-
-\### Frontend Setup
+```
 
 
 
-cd contact\_app\_frontend  
+---
 
-flutter pub get  
 
-flutter run  
+
+\### 2️⃣ Backend Setup
+
+
+
+```bash
+
+cd contact\_app\_backend
+
+npm install
+
+npm start
+
+```
+
+
+
+Create a `.env` file inside `contact\_app\_backend`:
+
+
+
+```
+
+MONGO\_URI=your\_mongodb\_connection\_string
+
+JWT\_SECRET=your\_secret\_key
+
+```
+
+
+
+---
+
+
+
+\### 3️⃣ Frontend Setup
+
+
+
+```bash
+
+cd contact\_app\_frontend
+
+flutter pub get
+
+flutter run
+
+```
 
 
 
@@ -120,13 +202,37 @@ flutter run
 
 
 
-Create a `.env` file inside backend folder:
+The backend requires the following environment variables:
 
 
 
-MONGO\_URI=your\_mongodb\_connection  
+| Variable     | Description |
 
-JWT\_SECRET=your\_secret\_key  
+|-------------|------------|
+
+| MONGO\_URI   | MongoDB connection string |
+
+| JWT\_SECRET  | Secret key for JWT authentication |
+
+
+
+---
+
+
+
+\## 📌 Future Improvements
+
+
+
+\- Contact search functionality
+
+\- Profile image upload
+
+\- Deployment (Render / Firebase)
+
+\- Role-based authentication
+
+\- API documentation (Swagger)
 
 
 
@@ -138,5 +244,17 @@ JWT\_SECRET=your\_secret\_key
 
 
 
-Naveena
+\*\*Naveena\*\*
+
+
+
+---
+
+
+
+\## ⭐ If You Like This Project
+
+
+
+Give it a star on GitHub ⭐
 
